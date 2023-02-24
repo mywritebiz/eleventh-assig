@@ -1,27 +1,25 @@
 body {
     margin: 0;
- 
+    height: 100vh;
+    background: #F2F2F2;
+}
+main {
+    max-width: 1360px;
 }
 header {
-    max-width: 1109px;
-    width: 100%;
-    margin-right: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 5%;
+    max-width: 1109px
 }
 .brand {
     max-width: 90.13px;
     width: 100%;
     min-height: 19.34px;
-    width: 100%;
 }
-
 ul {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
     font-family: 'Mulish', sans-serif;
     list-style: none;
 }
@@ -39,8 +37,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    flex-direction: row;
-    margin: 1%;
+    margin: 5%;
     max-width: 1037px;
     width: 100%;
     min-height: 251px;
@@ -83,6 +80,8 @@ ul {
     gap: 20px 20px;
     max-width: 1110px; 
     grid-auto-flow: row;
+    width: 100%;
+    margin: 3em;
     grid-template-areas:
       "rectangle1 rectangle1 rectangle1 rectangle2 rectangle2 rectangle2 rectangle3 rectangle3"
       "rectangle1 rectangle1 rectangle1 rectangle2 rectangle2 rectangle2 rectangle3 rectangle3"
