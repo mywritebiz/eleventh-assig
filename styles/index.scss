@@ -194,29 +194,75 @@ ul {
 .link-space {
     margin: 3px;
 }
-hr{
-    margin-top: 2em;
-    width: 90%;
-    background-color: lightslategray;
-}
-/* box sizing: border-box; 
-display: block; */
-.award-parent {
+.divider {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
+    min-height: 2px;
+    margin-bottom: 2em;
+}
+.container {  
     max-width: 1110px;
     width: 100%;
+    min-height: 411px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "maintitle1 secondtitle1 thirdtitle1 fourthtitle1"
+    ". secondtitle2 secondtitle3 secondtitle4";
+  }
+.maintitle1 { 
+    grid-area: maintitle1; 
+    margin-left: 2em;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #111111;
 }
-.award-title {
-    display: flex;
+.secondtitle1 { grid-area: secondtitle1; }
+.thirdtitle1 { grid-area: thirdtitle1; }
+.fourthtitle1 { grid-area: fourthtitle1; }
+.secondtitle2 { grid-area: secondtitle2; }
+.secondtitle3 { grid-area: secondtitle3; }
+.secondtitle4 { grid-area: secondtitle4; }
+
+.secondtitle1, .secondtitle2 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #111111;
 }
-.award-div1 {
-   
+.thirdtitle1, .secondtitle3 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #111111;
+} 
+.desc1, .desc2 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #111111;
+    mix-blend-mode: normal;
+    opacity: 0.6;
 }
-.award-div2{
-  
-}
-.award-div3 {
-   
+.fourthtitle1, .secondtitle4 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: right;
+    color: #111111;
+    margin-left: 5em;
 }
