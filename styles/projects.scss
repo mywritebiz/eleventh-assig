@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    max-width: 1350px;
+    width: 100%;
+    min-height: 100vh;
+    background: #F2F2F2;
+    margin: auto
+}
+main {
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+    max-width: 1109px
+}
+.home__link {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 23px;
+    text-decoration: none;
+    color: #111111;
+}
+/* .brand {
+    max-width: 90.13px;
+    width: 100%;
+    min-height: 19.34px;
+}*/
+
+ul {
+    display: flex;
+    font-family: 'Mulish', sans-serif;
+    list-style: none;
+}
+.nav__link {
+    text-decoration: none;
+    color: #111111;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.346154px;
+    margin-left: 1em;
+}
+.nav__link:hover, .home__link:hover {
+    color:dimgray 
+}
